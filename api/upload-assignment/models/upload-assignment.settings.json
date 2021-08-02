@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "associate_assignment_student",
+  "info": {
+    "name": "Associate-Assignment-Student",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "students": {
+      "via": "upload_assignments",
+      "collection": "student",
+      "dominant": true
+    },
+    "assignments": {
+      "collection": "assignment",
+      "via": "upload_assignments",
+      "dominant": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sections",
+  "info": {
+    "name": "Section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section_id": {
+      "type": "integer"
+    },
+    "associate_course_sections": {
+      "via": "sections",
+      "collection": "associate-course-section"
+    }
+  }
+}

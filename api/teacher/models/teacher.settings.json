@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teachers",
+  "info": {
+    "name": "Teacher"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "associate_course_teachers": {
+      "via": "teachers",
+      "collection": "associate-course-teacher"
+    }
+  }
+}

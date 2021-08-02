@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "Course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course_id": {
+      "type": "string"
+    },
+    "course_name": {
+      "type": "string"
+    },
+    "associate_course_sections": {
+      "via": "courses",
+      "collection": "associate-course-section"
+    },
+    "associate_course_teachers": {
+      "via": "courses",
+      "collection": "associate-course-teacher"
+    },
+    "associate_student_courses": {
+      "via": "courses",
+      "collection": "associate-student-course"
+    }
+  }
+}

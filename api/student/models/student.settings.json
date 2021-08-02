@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "name": "Student",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "std_id": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "associate_student_courses": {
+      "via": "students",
+      "collection": "associate-student-course"
+    },
+    "upload_assignments": {
+      "via": "students",
+      "collection": "upload-assignment"
+    }
+  }
+}

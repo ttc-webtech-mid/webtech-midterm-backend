@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "associate_student_course",
+  "info": {
+    "name": "Associate-Student-Course",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "courses": {
+      "collection": "course",
+      "via": "associate_student_courses",
+      "dominant": true
+    },
+    "students": {
+      "via": "associate_student_courses",
+      "collection": "student",
+      "dominant": true
+    }
+  }
+}

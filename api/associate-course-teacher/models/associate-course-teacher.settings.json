@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "associate_course_teacher",
+  "info": {
+    "name": "Associate-Course-Teacher"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "courses": {
+      "collection": "course",
+      "via": "associate_course_teachers",
+      "dominant": true
+    },
+    "teachers": {
+      "collection": "teacher",
+      "via": "associate_course_teachers",
+      "dominant": true
+    }
+  }
+}

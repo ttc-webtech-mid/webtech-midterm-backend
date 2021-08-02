@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assignments",
+  "info": {
+    "name": "Assignment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "detail": {
+      "type": "text"
+    },
+    "due_date": {
+      "type": "datetime"
+    },
+    "teacher": {
+      "model": "teacher"
+    },
+    "course": {
+      "model": "course"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "upload_assignments": {
+      "via": "assignments",
+      "collection": "upload-assignment"
+    }
+  }
+}
