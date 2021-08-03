@@ -11,5 +11,17 @@
     "draftAndPublish": false
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "rewards": {
+      "via": "associate_user_rewards",
+      "collection": "reward",
+      "dominant": true
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "associate_user_rewards",
+      "dominant": true
+    }
+  }
 }
