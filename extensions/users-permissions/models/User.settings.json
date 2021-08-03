@@ -58,6 +58,10 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "associate_user_rewards": {
+      "via": "users_permissions_users",
+      "collection": "associate-user-reward"
     }
   }
 }
