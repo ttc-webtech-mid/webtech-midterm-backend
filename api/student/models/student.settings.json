@@ -21,13 +21,15 @@
     "lastname": {
       "type": "string"
     },
-    "associate_student_courses": {
+    "courses": {
       "via": "students",
-      "collection": "associate-student-course"
+      "collection": "course",
+      "dominant": true
     },
-    "upload_assignments": {
+    "assignments": {
       "via": "students",
-      "collection": "upload-assignment"
+      "collection": "assignment",
+      "dominant": true
     }
   }
 }

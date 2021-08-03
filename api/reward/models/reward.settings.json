@@ -18,12 +18,14 @@
     "redeem_points": {
       "type": "integer"
     },
-    "associate_user_rewards": {
-      "via": "rewards",
-      "collection": "associate-user-reward"
-    },
     "detail": {
       "type": "text"
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "rewards",
+      "dominant": true
     }
   }
 }

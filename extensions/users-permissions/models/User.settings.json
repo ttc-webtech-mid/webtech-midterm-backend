@@ -59,9 +59,17 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "associate_user_rewards": {
+    "reward_points": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "scores": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "rewards": {
       "via": "users_permissions_users",
-      "collection": "associate-user-reward"
+      "collection": "reward"
     }
   }
 }

@@ -18,18 +18,20 @@
     "due_date": {
       "type": "datetime"
     },
-    "teacher": {
-      "model": "teacher"
-    },
-    "course": {
-      "model": "course"
-    },
     "topic": {
       "type": "string"
     },
-    "upload_assignments": {
+    "students": {
       "via": "assignments",
-      "collection": "upload-assignment"
+      "collection": "student"
+    },
+    "course": {
+      "via": "assignments",
+      "model": "course"
+    },
+    "teacher": {
+      "via": "assignments",
+      "model": "teacher"
     }
   }
 }

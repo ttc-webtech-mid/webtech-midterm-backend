@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "sections",
   "info": {
-    "name": "Section"
+    "name": "Section",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,9 +15,9 @@
     "section_id": {
       "type": "integer"
     },
-    "associate_course_sections": {
+    "courses": {
       "via": "sections",
-      "collection": "associate-course-section"
+      "collection": "course"
     }
   }
 }
