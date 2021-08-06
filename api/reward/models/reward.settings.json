@@ -21,11 +21,9 @@
     "detail": {
       "type": "text"
     },
-    "users_permissions_users": {
-      "plugin": "users-permissions",
-      "collection": "user",
+    "students": {
       "via": "rewards",
-      "dominant": true
+      "collection": "student"
     }
   }
 }

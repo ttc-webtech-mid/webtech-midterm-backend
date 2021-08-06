@@ -30,6 +30,23 @@
       "via": "students",
       "collection": "assignment",
       "dominant": true
+    },
+    "rewards": {
+      "collection": "reward",
+      "via": "students",
+      "dominant": true
+    },
+    "scores": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "reward_points": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "hand_in_assignments": {
+      "via": "student",
+      "collection": "hand-in-assignment"
     }
   }
 }

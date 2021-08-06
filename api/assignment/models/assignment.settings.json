@@ -32,6 +32,10 @@
     "teacher": {
       "via": "assignments",
       "model": "teacher"
+    },
+    "hand_in_assignments": {
+      "via": "assignment",
+      "collection": "hand-in-assignment"
     }
   }
 }
