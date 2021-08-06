@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hand-in-assignments",
+      "handler": "hand-in-assignment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hand-in-assignments/count",
+      "handler": "hand-in-assignment.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hand-in-assignments/:id",
+      "handler": "hand-in-assignment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hand-in-assignments",
+      "handler": "hand-in-assignment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hand-in-assignments/:id",
+      "handler": "hand-in-assignment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hand-in-assignments/:id",
+      "handler": "hand-in-assignment.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
