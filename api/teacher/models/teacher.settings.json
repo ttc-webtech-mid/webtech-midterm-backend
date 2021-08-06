@@ -26,6 +26,9 @@
     "assignments": {
       "via": "teacher",
       "collection": "assignment"
+    },
+    "teacher_email": {
+      "type": "email"
     }
   }
 }
