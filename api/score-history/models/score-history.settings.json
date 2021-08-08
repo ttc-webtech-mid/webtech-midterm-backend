@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "score_history",
+  "info": {
+    "name": "ScoreHistory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "points_received": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "student": {
+      "via": "score_histories",
+      "model": "student"
+    },
+    "points_redeem": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "reward": {
+      "model": "reward",
+      "via": "score_histories"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/score-histories",
+      "handler": "score-history.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/score-histories/count",
+      "handler": "score-history.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/score-histories/:id",
+      "handler": "score-history.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/score-histories",
+      "handler": "score-history.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/score-histories/:id",
+      "handler": "score-history.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/score-histories/:id",
+      "handler": "score-history.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
