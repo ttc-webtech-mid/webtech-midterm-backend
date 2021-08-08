@@ -13,8 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "student": {
-      "model": "student",
-      "via": "hand_in_assignments"
+      "via": "hand_in_assignments",
+      "model": "student"
     },
     "assignment": {
       "model": "assignment",

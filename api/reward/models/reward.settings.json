@@ -23,7 +23,16 @@
     },
     "students": {
       "via": "rewards",
-      "collection": "student"
+      "collection": "student",
+      "dominant": true
+    },
+    "stocks": {
+      "type": "biginteger",
+      "default": "1"
+    },
+    "score_histories": {
+      "via": "reward",
+      "collection": "score-history"
     }
   }
 }
