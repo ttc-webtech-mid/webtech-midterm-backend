@@ -55,6 +55,9 @@
     "score_histories": {
       "via": "student",
       "collection": "score-history"
+    },
+    "student_email": {
+      "type": "email"
     }
   }
 }

@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "teachers",
+  "collectionName": "admin_profiles",
   "info": {
-    "name": "Teacher",
-    "description": ""
+    "name": "AdminProfile"
   },
   "options": {
     "increments": true,
@@ -18,20 +17,8 @@
     "lastname": {
       "type": "string"
     },
-    "courses": {
-      "collection": "course",
-      "via": "teachers",
-      "dominant": true
-    },
-    "assignments": {
-      "via": "teacher",
-      "collection": "assignment"
-    },
-    "teacher_email": {
-      "type": "email"
-    },
     "user": {
-      "via": "teacher",
+      "via": "admin_profile",
       "plugin": "users-permissions",
       "model": "user"
     }

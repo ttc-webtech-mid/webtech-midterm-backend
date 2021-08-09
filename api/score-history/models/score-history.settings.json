@@ -25,8 +25,8 @@
       "default": "0"
     },
     "reward": {
-      "model": "reward",
-      "via": "score_histories"
+      "via": "score_histories",
+      "model": "reward"
     }
   }
 }
